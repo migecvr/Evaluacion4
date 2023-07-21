@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MEDIDORDBModelStoreContainer" CdmEntityContainer="MEDIDORDBEntities">
+    <EntitySetMapping Name="Lecturas">
+      <EntityTypeMapping TypeName="MEDIDORDBModel.Lectura">
+        <MappingFragment StoreEntitySet="Lectura">
+          <ScalarProperty Name="IdLectura" ColumnName="IdLectura" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Hora" ColumnName="Hora" />
+          <ScalarProperty Name="Minuto" ColumnName="Minuto" />
+          <ScalarProperty Name="Consumo" ColumnName="Consumo" />
+          <ScalarProperty Name="IdMedidor" ColumnName="IdMedidor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Medidors">
+      <EntityTypeMapping TypeName="MEDIDORDBModel.Medidor">
+        <MappingFragment StoreEntitySet="Medidor">
+          <ScalarProperty Name="IdMedidor" ColumnName="IdMedidor" />
+          <ScalarProperty Name="NumSerie" ColumnName="NumSerie" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="MEDIDORDBModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="Rut" ColumnName="Rut" />
+          <ScalarProperty Name="TipoUsuario" ColumnName="TipoUsuario" />
+          <ScalarProperty Name="Contrasenia" ColumnName="Contrasenia" />
+          <ScalarProperty Name="Correo" ColumnName="Correo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
